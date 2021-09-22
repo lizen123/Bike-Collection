@@ -1,0 +1,229 @@
+/* -------------------------
+google fonts
+------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ----------------------
+global variable
+---------------------------- */
+:root {
+  --bg-color: #264653;
+  --text-color: #ffffff;
+  --btn-bg: #e78548;
+}
+
+/* -----------------------
+global css
+------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.custom-btn {
+  background-color: #E76F51;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem !important;
+  border-color: transparent;
+  color: #fff;
+}
+
+/* ------------------
+Navbar
+-------------------- */
+.nav-bg {
+  background-color: var(--bg-color);
+}
+.nav-bg ul li {
+  padding: 0 2rem;
+}
+.nav-bg ul li a {
+  color: var(--text-color) !important;
+  transform: color 0.3s ease;
+}
+.custom-toggoler {
+  background-color: var(--text-color) !important;
+  border-color: var(--text-color);
+}
+
+/*---------------------
+header section
+------------------------------
+ */
+
+.header-section {
+  height: 92vh;
+  background-color: var(--bg-color);
+}
+.header-section .header-text {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 92vh;
+}
+.header-section .header-text p:nth-child(1) {
+  font-size: 1.4rem;
+}
+.header-img {
+  display: flex;
+  align-items: center;
+  height: 92vh;
+}
+.header-text .custom-btn {
+  width: fit-content;
+  display: inline-block;
+  text-decoration: none;
+}
+/* -------------
+Featured Bike section
+---------------
+*/
+
+.featured-title p {
+  color: var(--btn-bg);
+}
+.gray-color {
+  filter: grayscale(100%);
+}
+
+/* --------------------------------
+blog section
+-------------------------------- */
+.blog-section .bike-blog-text {
+  padding: 2rem 0;
+}
+.blog-section .bike-blog-text p {
+  line-height: 3rem;
+  font-size: 1.8rem;
+  margin: 1.8rem 0;
+}
+
+/* ----------------------------------
+Testimonial Section
+------------------------------------ */
+
+.testimonial span {
+  color: var(--btn-bg);
+}
+.testimonial .rating i {
+  color: var(--btn-bg);
+}
+.testimonial .rating i:last-child {
+  color: #264653 !important;
+}
+/* button-a */
+.button-a{
+  text-decoration: none;
+  color:white;
+}
+
+
+/*-------------------------------
+Contuct Us 
+--------------------------------*/
+#reserve{
+  background: url(images/banner.jpg) center;
+  background-size: cover;
+  margin: 40px 0;
+  padding: 70px 0;
+}
+#reserve .flexing{
+    display: flex;
+  align-items: center;
+}
+#reserve .reserve-detail{
+  width: 40%;
+  padding: 40px;
+  background: darkgray;
+  text-align: center;
+}
+#reserve .box .mini-title{
+  font-size: 14px;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+}
+#reserve .box h3{
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin: 15px 0 20px;
+}
+#reserve .box h5{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+#reserve .box p{
+  font-size: 13px;
+  color: #fff;
+  line-height: 23px;
+}
+#reserve .contact{
+  font-weight: 600;
+  margin-top: 40px;
+}
+#reserve .reserve-form{
+  width: 60%;
+  padding: 40px;
+}
+#reserve .reserve-form .flexing{
+  margin: 30px 0;
+}
+#reserve .reserve-form .form-half{
+  width: 46%;
+}
+#reserve .reserve-form .form-3{
+  width: 30%;
+}
+
+.reserve-form input{
+  outline: none;
+  border: 1px solid #fff9e1;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background: paleturquoise;
+  color: #fff;
+  font-size: 13px;
+  width: 100%;
+}
+.reserve-form .submit{
+  transition: 400ms;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background: #eee;
+  color: #a5965a;
+}
+.reserve-form .submit:hover{
+  background: transparent;
+  color: #E76F51;
+}
+/*-------------
+ contuct us
+-------------- */
+
+/* ------------------------------------
+Accordion
+--------------------------------------- */
+.accordion span {
+  color: var(--btn-bg);
+}
+.bike{
+  height: 500px;
+}
+/* ----------------------------------
+Responsive Css
+------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .header-section .header-text {
+    height: 40vh;
+  }
+  .header-img {
+    height: 40vh;
+  }
+}
